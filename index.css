@@ -18,6 +18,25 @@ body {
     color: white;
     text-decoration: none;
 }
+#logocel{
+    padding-left: 0.8vw;
+    padding-top: 0.5vh;
+}
+#cel1{
+    padding-right: 7vw;
+    padding-left: 24vw;
+}
+#cel2{
+    padding-right: 7vw;
+    padding-left: 7vw;
+}
+#cel3{
+    padding-right: 7vw;
+    padding-left: 7vw;
+}
+#sobre{
+    padding-left: 21vw;
+}
 #budaft{
     position:absolute;
     bottom:0;
