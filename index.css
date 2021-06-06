@@ -44,14 +44,12 @@ header{
 #voslide{
     display: flex;
     flex-direction: row-reverse;
-    background-color: chocolate;
 }
 #paislide{
     width: 50%;
-    background-color: aqua;
 }
 .slideshow-container{
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
@@ -78,6 +76,10 @@ header{
 }
 .prev:hover, .next:hover{
     background-color: rgba(0,0,0,0.8);
+}
+.imgslide{
+    max-width:40vw;
+    width: auto;
 }
 .text{
     color: #f2f2f2;
