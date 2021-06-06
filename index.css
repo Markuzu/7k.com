@@ -7,17 +7,22 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-body {
+body{
     background-image: url("imagens/background.jpg");
 }
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 #painav{
-    margin-top: 2.5vh;
+    margin-top: 0.5vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 #logo{
-    margin-top: 2.5vh;
+    margin-top: 0.5vh;
     margin-left: 2.5vw;
     width: 100px;
     float: left;
@@ -28,13 +33,97 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
     width: 94vw;
 }
 .linknav{
     text-decoration: none;
     color: white;
-    font-size: clamp(0.75em, 1em + 1.1vw, 2em);
+    font-size: clamp(1em, 1em + 1.1vw, 2em);
+}
+#voslide{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: chocolate;
+}
+#paislide{
+    width: 50%;
+    background-color: aqua;
+}
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides{
+    display: none;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+  @keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
 }
 #budaft{
     position:absolute;
@@ -44,7 +133,7 @@ body {
     max-width: 50vw;
     width: auto;
 }
-#rodape {
+#rodape{
     display: flex;
     flex-direction: row-reverse;
     background-color: #8e919e;
@@ -62,6 +151,6 @@ body {
     align-items: center;
     width: 50%;
 }
-#txtrodape {
-    font-size: clamp(0.5em, 1em + 0.75vw, 2em);
+#txtrodape{
+    font-size: clamp(0.75em, 1em + 0.75vw, 2em);
 }
