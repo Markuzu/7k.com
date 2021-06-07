@@ -45,7 +45,7 @@ header{
     display: flex;
     flex-direction: row-reverse;
 }
-#budaft{
+.budaft{
     position:absolute;
     bottom:0;
     left: 0;
@@ -60,7 +60,7 @@ header{
     position:absolute;
     bottom:0;
     width:100%;
-    height: 9vh;
+    height: 7vh;
     z-index: -1;
 
 }
@@ -72,7 +72,7 @@ header{
     width: 50%;
 }
 #txtrodape{
-    font-size: clamp(0.75em, 1em + 0.75vw, 2em);
+    font-size: clamp(0.75em, 1em + 0.75vw, 1.5em);
 }
 #rodapeft{
     width: 50%;
